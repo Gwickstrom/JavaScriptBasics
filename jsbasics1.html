@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js basics 1</title>
+    </head>
+    <body>
+        <script>
+            function basic1(x){
+                x = [];
+                console.log(x);
+                x.push('coding', 'dojo', 'rocks', 'hardest');
+                console.log(x);
+                x.pop(x.length - 1);
+                console.log(x);
+            }
+            basic1();
+
+
+            function basic2(){
+                const y = [];
+                console.log(y);
+                y.push(88);
+            }
+            basic2();
+
+            function basic3(){
+                var z = [9,10, 6, 5, 01, 20, 13, 2];
+                for(var i = 0; i < z.length - 1; i++){
+                    console.log(z[i]);
+                    if(i === z.length - 1){
+                        break;
+                    }
+                }
+            }
+            basic3();
+            console.log("\n");
+            function basic4(){
+                var names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
+                var name = [];
+                for(i = 0; i < names.length; i++){
+                    name = names[i];
+                    var n = name.length;
+                    console.log(n);
+                    if(n === 5){
+                        console.log(names[i]);
+                    }
+                };
+            };
+            basic4();
+            console.log('\n');
+            function yell(string){
+                var upper = string.toUpperCase();
+                return upper;
+            };
+            j = yell('greg');
+            h = yell('sammie');
+            console.log(j + " " + h);
+        </script>
+    </body>
+</html>
